@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>21.09.2025</title>
+    <meta
+      name="description"
+      content="21 September 2025 — the day Anagha said yes. Sreeram & Anagha."
+    />
+    <meta property="og:title" content="21.09.2025 — Sreeram & Anagha" />
+    <meta property="og:description" content="The day you said yes." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://21092025.com" />
+    <link rel="icon" href="assets/green-rabbit-logo.png" />
+    <link rel="apple-touch-icon" href="assets/green-rabbit-logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@400;500&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Great+Vibes&family=Noto+Serif+Malayalam:wght@400;600&family=Noto+Serif+Telugu:wght@400;600&family=Outfit:wght@300;400;500&family=Patrick+Hand&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css?v=28" />
+  </head>
+  <body class="is-locked">
+    <div class="grain" aria-hidden="true"></div>
+
+    <section id="gate" class="gate" aria-label="Who is here">
+      <img
+        class="gate-logo"
+        src="assets/green-rabbit-logo.png"
+        alt="A green rabbit"
+      />
+      <p class="eyebrow">21.09.2025</p>
+      <h1 class="gate-title">Who’s here?</h1>
+      <div class="who-row">
+        <button type="button" class="who-btn" data-user="anagha">
+          Anagha
+        </button>
+        <button type="button" class="who-btn" data-user="sreeram">
+          Sreeram
+        </button>
+      </div>
+      <form id="gate-form" class="gate-form" hidden>
+        <label class="visually-hidden" for="gate-password">Password</label>
+        <input
+          id="gate-password"
+          type="password"
+          name="password"
+          autocomplete="current-password"
+          placeholder="Password"
+          required
+        />
+        <button type="submit">Enter</button>
+        <p class="gate-error" id="gate-error" hidden>Not this door.</p>
+      </form>
+    </section>
+
+    <section id="welcome" class="welcome is-gone" aria-live="polite">
+      <img id="welcome-art" alt="" />
+      <p class="eyebrow">21.09.2025</p>
+      <h1 class="welcome-title" id="welcome-title"></h1>
+    </section>
+
+    <header class="nav">
+      <a class="nav-mark" href="#top">
+        <img src="assets/green-rabbit-logo.png" alt="" />
+        <span>21.09.2025</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#together">Time</a>
+        <a href="#story">Story</a>
+        <a href="#memories">Memories</a>
+        <a href="#letter">Letter</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-ornament hero-ornament-tl" aria-hidden="true"></div>
+        <div class="hero-ornament hero-ornament-br" aria-hidden="true"></div>
+        <div class="hero-inner">
+          <p class="eyebrow" id="hero-eyebrow">Our anniversary</p>
+          <h1 class="hero-date">
+            <span>21</span>
+            <i aria-hidden="true"></i>
+            <span>09</span>
+            <i aria-hidden="true"></i>
+            <span>2025</span>
+          </h1>
+          <p class="hero-names" id="hero-names"></p>
+          <p class="hero-tagline" id="hero-tagline"></p>
+          <p class="hero-scripts" id="hero-between"></p>
+          <p class="hero-long" id="hero-long"></p>
+        </div>
+        <a class="scroll-cue" href="#together">
+          <span>Begin</span>
+          <b></b>
+        </a>
+      </section>
+
+      <section id="together" class="together">
+        <p class="eyebrow">Since the yes</p>
+        <h2 id="together-title">Every hour of us</h2>
+        <p class="lede" id="together-lede"></p>
+        <div class="counters" id="counters"></div>
+        <p class="next-note" id="next-note"></p>
+      </section>
+
+      <section id="story" class="story">
+        <p class="eyebrow">The story</p>
+        <h2>How we got here</h2>
+        <ol class="timeline" id="timeline"></ol>
+      </section>
+
+      <section id="memories" class="memories">
+        <p class="eyebrow">Memories</p>
+        <h2>A small museum of us</h2>
+        <p class="lede">
+          From a Bumble in Hyderabad to a yes — then the trips, the café, and a
+          few imagined decades, just to see.
+        </p>
+        <div class="gallery" id="gallery"></div>
+
+        <p class="eyebrow gallery-break">Our memories</p>
+        <h2>Places we kept</h2>
+        <p class="lede">
+          Bir, a favourite café, two birthdays, and Rajgundha —
+          the days that still feel close.
+        </p>
+        <div class="gallery" id="gallery-memories"></div>
+
+        <p class="eyebrow gallery-break">Us through time</p>
+        <h2>If we had always found each other</h2>
+        <p class="lede">
+          A 1920s street and a 1950s sitting, then a pair of 1980s nights —
+          generated, just to look at us in another century.
+        </p>
+        <div class="gallery" id="gallery-time"></div>
+      </section>
+
+      <section id="letter" class="letter-wrap">
+        <p class="eyebrow">A letter</p>
+        <article class="letter" id="letter-card">
+          <p class="letter-greeting" id="letter-greeting"></p>
+          <h2 class="letter-title" id="letter-title"></h2>
+          <div class="letter-body" id="letter-body"></div>
+          <p class="letter-signoff" id="letter-signoff"></p>
+          <p class="letter-signature" id="letter-signature"></p>
+        </article>
+      </section>
+
+      <section class="close">
+        <p class="close-script" id="close-script">Forever starts here</p>
+        <p class="hero-date close-date">
+          <span>21</span>
+          <i aria-hidden="true"></i>
+          <span>09</span>
+          <i aria-hidden="true"></i>
+          <span>2025</span>
+        </p>
+        <p class="close-love" id="close-love">I LOVE YOU</p>
+        <p class="close-domain">21092025.com</p>
+      </section>
+
+      <section class="feedback" id="feedback">
+        <p class="eyebrow">One last thing</p>
+        <h2>How was this?</h2>
+        <div class="feedback-arena" id="feedback-arena">
+          <button type="button" class="feedback-btn feedback-yes" id="feedback-yes">
+            Perfect
+          </button>
+          <button type="button" class="feedback-btn feedback-no" id="feedback-no">
+            Not so Good
+          </button>
+        </div>
+        <p class="feedback-thanks" id="feedback-thanks" hidden>
+          I knew it thenks baby girl
+        </p>
+      </section>
+    </main>
+
+    <button
+      type="button"
+      class="audio-btn"
+      id="audio-btn"
+      hidden
+      aria-label="Play our song"
+    >
+      Play
+    </button>
+    <audio id="song" loop></audio>
+
+    <script src="js/content.js?v=28"></script>
+    <script src="js/app.js?v=28"></script>
+  </body>
+</html>
